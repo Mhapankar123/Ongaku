@@ -1,0 +1,9 @@
+from rest_framework import serializers
+from .models import Albums
+
+
+class AlbumsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Albums
+        fields = ('user', 'title','artist','image','audio_file',)
+ 

@@ -1,0 +1,23 @@
+.progress_bar {
+  height: 1rem;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.progressed {
+  height: 1rem;
+  background-color: orange;
+  transition: all 3s ease-in;
+  position: relative;
+  border-radius: 10px;
+}
+
+.progressed::after {
+  content: ' ';
+  height: 1rem;
+  width: 1rem;
+  right: -5px;
+  border-radius: 10px;
+  background-color: red;
+  position: absolute;
+}

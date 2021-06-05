@@ -1,0 +1,14 @@
+.mainsectioncontainer {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.searchbarin {
+  background-color: transparent;
+  line-height: 2.5rem;
+  &:focus {
+    background-color: transparent;
+    outline: none !important;
+  }
+}

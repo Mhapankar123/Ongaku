@@ -1,0 +1,34 @@
+.songpagediv {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #f2f3f4;
+  background-image: url('../../assets/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.songdetaildiv {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  // color: #fff;
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.searchbarin {
+  background-color: transparent;
+  line-height: 2.5rem;
+  &:focus {
+    background-color: transparent;
+    outline: none !important;
+  }
+}
+
+// .imagediv {
+//   height: 100%;
+//   filter: blur(8px);
+//   -webkit-filter: blur(8px);
+// }

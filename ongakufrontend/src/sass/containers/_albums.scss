@@ -1,0 +1,22 @@
+.sidecont {
+  height: 100vh;
+}
+
+.mainsectioncontainer {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-image: url('../../assets/image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.searchbarin {
+  background-color: transparent;
+  line-height: 2.5rem;
+  &:focus {
+    background-color: transparent;
+    outline: none !important;
+  }
+}
