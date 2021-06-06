@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'songspage',
     'arjit',
     'albums',
+    'upload',
 ]
 
 MIDDLEWARE = [

@@ -11,6 +11,7 @@ urlpatterns = [
     path("songspage/", include("songspage.urls"), name="songspage"),
     path("arjit/", include("arjit.urls"), name="arjitpage"),
     path("albums/", include("albums.urls"), name="albumpage"),
+    path("upload/", include("upload.urls"), name="uploadpage"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
