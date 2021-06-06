@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from rest_framework import permissions
 from django.conf import settings
 from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser, FormParser
@@ -12,7 +11,7 @@ from .serializers import UploadSerializer
 
 class UploadView(APIView):
     parser_classes = (MultiPartParser, FormParser)
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [AllowAny]
 
     def get(self, request, *args, **kwargs):
         uploads = Upload.objects.all()
