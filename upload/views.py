@@ -10,7 +10,7 @@ from .models import Upload
 from .serializers import UploadSerializer
 
 class UploadView(APIView):
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = [MultiPartParser, FormParser]
     permission_classes = [AllowAny]
 
     def get(self, request, *args, **kwargs):
